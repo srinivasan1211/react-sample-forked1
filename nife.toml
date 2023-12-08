@@ -1,7 +1,7 @@
-# nile.toml file generated for react on 2023-12-01T13:27:10+05:30
+# nile.toml file generated for gitaction_react on 2023-12-08T12:07:20+05:30
 
-app = "react"
-id = "3bffae4352a70138d36ebc3548c0a3d8e26d40bb2b69fbf8d25ce7c492b5ac414bdfb027351334085971418d2f9f6365"
+app = "gitaction_react"
+id = "42a8505c25709c2c52d2b3c622acfc81c294a320799aca282c4013fec6ec9456ad66b0d52426c7f6bffd63c27e3f1d95"
 
 [build]
   builtin = "static react"
