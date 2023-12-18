@@ -1,7 +1,7 @@
-# nile.toml file generated for gitaction_react on 2023-12-08T12:07:20+05:30
+# nile.toml file generated for nifedocgitac on 2023-12-18T11:50:46+05:30
 
-app = "gitaction_react"
-id = "42a8505c25709c2c52d2b3c622acfc81c294a320799aca282c4013fec6ec9456ad66b0d52426c7f6bffd63c27e3f1d95"
+app = "nifedocgitac"
+id = "5bba275301a7545dfc9eaf07af12e7bb273af00cb4fecbe96bc58c6d13ff4e93d9aca202902b614f1c73b9806076f8bc"
 
 [build]
   builtin = "static react"
@@ -20,7 +20,7 @@ kill_timeout = 5
   http_checks = []
   internal_port = 3000
   protocol = "tcp"
-  routing_policy = "Latency"
+  routing_policy = "Geolocation"
   script_checks = []
 
   [services.concurrency]
