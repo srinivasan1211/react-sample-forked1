@@ -1,0 +1,53 @@
+# nile.toml file generated for openworks on 2024-04-15T20:21:46+05:30
+
+app = "openworks"
+docker_file_path = ""
+github = ""
+id = "7f6b24488faf3c75584f5e1ae3a1eeb20058376ced397b8c1c5973e44c1914feadbf58c76b069acc446dcccaad0da867"
+
+[build]
+  image = "nginx:latest"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[env]
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
+
+[[services]]
+  external_port = 80
+  http_checks = []
+  internal_port = 80
+  protocol = "tcp"
+  routing_policy = "Geolocation"
+  script_checks = []
+
+  [services.concurrency]
+    hard_limit = 25
+    soft_limit = 20
+    type = "connections"
+
+  [services.limits]
+    cpu = "1"
+    memory = "256"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+  [services.requests]
+    cpu = "0.5"
+    memory = "128"
+
+  [[services.tcp_checks]]
+    grace_period = "1s"
+    interval = "15s"
+    restart_limit = 6
+    timeout = "2s"
