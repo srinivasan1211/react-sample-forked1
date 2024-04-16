@@ -6,7 +6,7 @@ github = ""
 id = "7f6b24488faf3c75584f5e1ae3a1eeb20058376ced397b8c1c5973e44c1914feadbf58c76b069acc446dcccaad0da867"
 
 [build]
-  image = "nginx:latest"
+  image = "nife123/snake-node:deployment-74h031"
 
 kill_signal = "SIGINT"
 kill_timeout = 5
@@ -20,7 +20,7 @@ kill_timeout = 5
 [[services]]
   external_port = 80
   http_checks = []
-  internal_port = 80
+  internal_port = 4040
   protocol = "tcp"
   routing_policy = "Geolocation"
   script_checks = []
