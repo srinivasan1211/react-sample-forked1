@@ -1,15 +1,11 @@
-# nile.toml file generated for openworks on 2024-04-15T20:21:46+05:30
-
 app = "openworks"
-docker_file_path = ""
 github = ""
 id = "7f6b24488faf3c75584f5e1ae3a1eeb20058376ced397b8c1c5973e44c1914feadbf58c76b069acc446dcccaad0da867"
-
-[build]
-  image = "nife123/snake-node:deployment-74h031"
-
 kill_signal = "SIGINT"
 kill_timeout = 5
+
+[build]
+  image = "nginx:latest"
 
 [env]
 
@@ -18,9 +14,9 @@ kill_timeout = 5
   auto_rollback = true
 
 [[services]]
-  external_port = 80
+  external_port = "80"
   http_checks = []
-  internal_port = 4040
+  internal_port = "80"
   protocol = "tcp"
   routing_policy = "Geolocation"
   script_checks = []
