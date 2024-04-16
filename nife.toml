@@ -1,11 +1,11 @@
-app = "laudable-app-3657"
-github = ""
-id = "7f6b24488faf3c75584f5e1ae3a1eeb20058376ced397b8c1c5973e44c1914feadbf58c76b069acc446dcccaad0da867"
+app = "awesome-app-4602"
+github = "https://github.com/revathivinodkumar/react-sample/archive/refs/heads/main.zip"
+id = "3a93011d2b40bcd1c1dbfb71d0b8e45d71831ccbc4dc8ccca9ae25c639bd1811f11fca7243084f5419bdf8f3e7260316"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
 [build]
-  image = "nife123/snake-node:deployment-74h031"
+  image = ""
 
 [env]
 
@@ -16,9 +16,9 @@ kill_timeout = 5
 [[services]]
   external_port = "80"
   http_checks = []
-  internal_port = "4040"
+  internal_port = "3000"
   protocol = "tcp"
-  routing_policy = "Geolocation"
+  routing_policy = "Latency"
   script_checks = []
 
   [services.concurrency]
