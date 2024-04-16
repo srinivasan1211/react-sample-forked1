@@ -13,4 +13,4 @@
           env:
             NIFE_ACCESS_TOKEN: ${{ secrets.NIFE_ACCESS_TOKEN }}
           with:
-            args: "config save"
+            args: "deploy --remote-only"
